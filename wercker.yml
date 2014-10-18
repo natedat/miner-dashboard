@@ -1,14 +1,15 @@
 box: wercker/nodejs
 build:
   steps:
-    - npm-install:
-        strict-ssl: false
+    - script:
+        name: install dependencies
+        code: |-
+            npm start
+       
+deploy:
+  steps:
     - sjoerdmulder/rsync-deploy@0.1.0:
         host: dash-flippi.rhcloud.com
         user: 544230665973caed8a000622
         directory: $OUTDIR
-        sshkey: $SSHB_PRIVATE        
-deploy:
-  steps:
-    - openshift-deploy
-    
+        sshkey: $SSH_PRIVATE      
