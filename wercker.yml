@@ -1,0 +1,4 @@
+box: wercker/nodejs
+deploy:
+    steps:
+        - wercker/npm-install

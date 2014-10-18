@@ -10,7 +10,7 @@ var path = require('path'),
     webinterfaceDefaults = {
         id: '__webinterface__',
         module: webinterface,
-        port: 3000
+        port: 8080
     },
     App = require('./lib/App');
 
