@@ -20,7 +20,7 @@ opts = opts.option('config', {
     'default': './config/config.js',
     help: 'Path to config file'
 }).parse();
-
+ 
 config = require(path.resolve(opts.config));
 config.modules.push(_.extend(webinterfaceDefaults, config.webinterface));
 
