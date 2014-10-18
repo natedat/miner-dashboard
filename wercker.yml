@@ -8,8 +8,4 @@ build:
    
 deploy:
   steps:
-    - sjoerdmulder/rsync-deploy@0.1.0:
-        host: dash-flippi.rhcloud.com
-        user: 544230665973caed8a000622
-        directory: $OUTDIR
-        sshkey: $SSH_PRIVATE      
+    - wercker/openshift-deploy
