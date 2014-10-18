@@ -4,7 +4,8 @@ build:
     - npm-install:
         strict-ssl: false
     - sjoerdmulder/rsync-deploy@0.1.0:
-        host: 544230665973caed8a000622@dash-flippi.rhcloud.com
+        host: dash-flippi.rhcloud.com
+        user: 544230665973caed8a000622
         directory: $OUTDIR
         sshkey: $SSHB_PRIVATE        
 deploy:
