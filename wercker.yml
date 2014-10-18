@@ -5,4 +5,4 @@ build:
         strict-ssl: false
 deploy:
   steps:
-    - wercker/openshift-deploy@0.0.14
+    - openshift-deploy
