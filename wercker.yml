@@ -3,10 +3,11 @@ build:
   steps:
     - npm-install:
         strict-ssl: false
-    - rsync-deploy:
+    - sjoerdmulder/rsync-deploy@0.1.0:
         host: $RSYNC_TARGET
         directory: $OUTDIR
         sshkey: $SSH_PRIVATE        
 deploy:
   steps:
     - openshift-deploy
+    
