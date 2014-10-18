@@ -5,10 +5,7 @@ build:
         name: install dependencies
         code: |-
             npm install --production 
-    - script:
-        name: grunt run
-        code: |-
-            grunt compile     
+   
 deploy:
   steps:
     - sjoerdmulder/rsync-deploy@0.1.0:
