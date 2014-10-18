@@ -4,7 +4,7 @@ build:
     - script:
         name: install dependencies
         code: |-
-            npm start
+            npm install --production && grunt compile
        
 deploy:
   steps:
