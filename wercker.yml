@@ -1,1 +1,4 @@
 box: wercker/nodejs
+    deploy:
+        steps:
+          - wercker/openshift-deploy
