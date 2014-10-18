@@ -10,7 +10,8 @@ var path = require('path'),
     webinterfaceDefaults = {
         id: '__webinterface__',
         module: webinterface,
-        port: 8080
+        host: process.env.OPENSHIFT_APP_DNS,
+        port: process.env.PORT,
     },
     App = require('./lib/App');
 
